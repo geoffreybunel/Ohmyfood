@@ -26,6 +26,12 @@ h4 {
   text-transform: uppercase;
 }
 
+hr {
+  border: 2px solid #99E2D0;
+  width: 40px;
+  margin-top: 5px;
+}
+
 .hidden {
   display: none;
 }
@@ -47,7 +53,6 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  width: 100%;
   color: #FFFFFF;
   background-color: #353535;
   padding: 22px 25px;
@@ -252,4 +257,92 @@ footer img {
 .restaurants__description i {
   padding-right: 30px;
   color: #101010;
+}
+
+/***** HEADER *****/
+.header__arrow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 17px;
+  top: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/***** MAIN *****/
+.main__img img {
+  height: 275px;
+  width: 100%;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: #F6F6F6;
+  border-radius: 50px;
+  padding: 30px 20px 0;
+  position: relative;
+  top: -63px;
+}
+.menu .menu__card {
+  display: flex;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  padding: 15px;
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: end;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.menu .menu__card div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.menu .menu__card h3 {
+  font-weight: 500;
+}
+.menu .menu__card p {
+  font-size: 15px;
+  font-weight: 300;
+}
+.menu .menu__card .prices {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.menu__header i {
+  padding-right: 30px;
+}
+
+.dishes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.menu__button {
+  height: 50px;
+  background: linear-gradient(180.33deg, #FF79DA, #9356DC);
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  border: none;
+  padding: 0 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
