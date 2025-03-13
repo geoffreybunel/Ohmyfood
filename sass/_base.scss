@@ -25,7 +25,8 @@ $second-bg: #FFFFFF;
 
 @mixin card {
     display: flex;
-    box-shadow: 0px 4px 15px 0px #00000026;
+    border-radius: 15px;
+    background-color: $second-bg;
 }
 
 @mixin flex__center {
@@ -62,6 +63,10 @@ h4 {
     font-size: 16px;
     font-weight: 300;
     text-transform: uppercase;
+}
+
+.hidden {
+    display: none;
 }
 
 /************ Header ************/
