@@ -1,1 +1,43 @@
 /***** COEURS *****/
+.like {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 24px; /* Taille des icônes */
+}
+
+/* Cache la case à cocher */
+.like__checkbox {
+    display: none;
+}
+
+/* Style de base des icônes */
+.like__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Icône du cœur vide (par défaut visible) */
+.like__icon--nobg {
+    opacity: 1;
+}
+
+/* Icône du cœur plein (par défaut caché) */
+.like__icon--bg {
+    opacity: 0;
+    transform: scale(0.8); /* Effet de zoom */
+    color: red; /* Change la couleur du cœur plein */
+}
+
+/* Quand la case à cocher est cochée, on inverse les icônes */
+.like__checkbox:checked ~ .like__icon--nobg {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.like__checkbox:checked ~ .like__icon--bg {
+    opacity: 1;
+    transform: scale(1);
+}
