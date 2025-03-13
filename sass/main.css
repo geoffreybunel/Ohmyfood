@@ -286,30 +286,30 @@ footer img {
   align-items: center;
   gap: 40px;
   background-color: #F6F6F6;
-  border-radius: 50px;
-  padding: 30px 20px 0;
+  border-radius: 50px 50px 0 0;
+  padding: 40px 20px;
   position: relative;
   top: -63px;
+  margin-bottom: -63px;
 }
 .menu .menu__card {
   display: flex;
   border-radius: 15px;
   background-color: #FFFFFF;
   padding: 15px;
-  border-radius: 15px;
   justify-content: space-between;
   align-items: end;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
 }
-.menu .menu__card div {
+.menu .menu__card .menu__content {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.menu .menu__card h3 {
+.menu .menu__card .meal_name {
   font-weight: 500;
 }
-.menu .menu__card p {
+.menu .menu__card .meal_subname {
   font-size: 15px;
   font-weight: 300;
 }
