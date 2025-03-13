@@ -32,10 +32,6 @@ hr {
   margin-top: 5px;
 }
 
-.hidden {
-  display: none;
-}
-
 /************ Header ************/
 .header {
   display: flex;
@@ -254,7 +250,7 @@ footer img {
   gap: 5px;
   padding: 15px;
 }
-.restaurants__description i {
+.restaurants__description .restaurants__like--nobg {
   padding-right: 30px;
   color: #101010;
 }
