@@ -41,6 +41,38 @@ h4 {
   z-index: 2;
 }
 
+/************ Footer ************/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #353535;
+  padding: 22px 25px;
+}
+footer img {
+  width: auto;
+  height: 20px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-weight: 400;
+}
+
+.footer__link {
+  display: flex;
+  gap: 15px;
+}
+.footer__link i {
+  height: 13px;
+  width: 12px;
+}
+
 /************ Location ************/
 .location {
   position: relative;
@@ -132,6 +164,7 @@ h4 {
   background-color: #F6F6F6;
   border-radius: 20px;
   padding-left: 40px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
 }
 .tuto__steps .step .tuto__icon {
   color: #7E7E7E;

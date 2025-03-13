@@ -58,8 +58,7 @@
 
 /************ Tutorial ************/
 .tuto {
-    display: flex;
-    flex-direction: column;
+    @include flex__column;
     gap: 30px;
     background-color: $second-bg;
     padding: 50px 20px;
@@ -80,6 +79,7 @@
         background-color: $main-bg;
         border-radius: 20px;
         padding-left: 40px;
+        box-shadow: 0px 4px 15px 0px #00000026;
 
         & .tuto__icon {
             color: #7E7E7E;
@@ -109,16 +109,14 @@
 
 /************ Restaurants ************/
 .restaurants {
-    display: flex;
-    flex-direction: column;
+    @include flex__column;
     gap: 30px;
     padding: 50px 20px;
     background-color: $main-bg;
 }
 
 .restaurants__cards {
-    display: flex;
-    flex-direction: column;
+    @include flex__column;
     gap: 18px;
 
     & .card {
