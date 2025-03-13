@@ -1,0 +1,28 @@
+$main-color: #9356DC;
+$second-color: #FF79DA;
+$tag-bg-color: #99E2D0;
+$tag-text-color: #008766;
+$dark-color: #353535;
+$second-text-color: #FFFFFF;
+$header-form-bg-color: #EAEAEA;
+$main-bg: #F6F6F6;
+$second-bg: #FFFFFF;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-family: "Shrikhand", serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63px;
+    box-shadow: 0px 2px 4px 0px #00000026;
+}
