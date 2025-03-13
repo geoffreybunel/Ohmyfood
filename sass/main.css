@@ -292,6 +292,9 @@ footer img {
   top: -63px;
   margin-bottom: -63px;
 }
+.menu__title {
+  font-family: "Shrikhand", serif;
+}
 .menu .menu__card {
   display: flex;
   border-radius: 15px;

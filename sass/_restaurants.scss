@@ -28,6 +28,10 @@
     top: -63px;
     margin-bottom: -63px;
 
+    &__title {
+        font-family: "Shrikhand", serif;
+    }
+
     & .menu__card {
         @include card;
         padding: 15px;
