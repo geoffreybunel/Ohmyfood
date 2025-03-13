@@ -15,21 +15,51 @@
         <h1>Ohmyfood</h1>
     </header>
 
+    <!------ MAIN ------>
     <main>
-       <section class="location">
+        <!--- Location --->
+        <section class="location">
             <form method="get">
                 <i class="fa-solid fa-location-dot location__icon" aria-hidden="true"></i>
                 <input type="search" placeholder="Paris, Belleville" name="search-input" id="search-input" class="location__input">
             </form>
-       </section>
+        </section>
 
        <section class="hero">
-        <h2 class="hero__title">Réservez le menu qui vous convient</h2>
-        <p class="hero__subtitle">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-        <a href="#restaurants">
-            <button type="submit" class="hero__button">Explorer nos restaurants</button>
-        </a>
-    </section>
+            <h2 class="hero__title">Réservez le menu qui vous convient</h2>
+            <p class="hero__subtitle">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+            <a href="#restaurants">
+                <button type="submit" class="hero__button">Explorer nos restaurants</button>
+            </a>
+        </section>
+
+        <!--- Tutorial --->
+        <section class="tuto">
+            <h2>Fonctionnement</h2>
+            <div class="tuto__steps">
+                <div class="step">
+                    <div class="tuto__number">
+                        <p>1</p>
+                    </div>
+                    <i class="fa-solid fa-mobile-screen fa-lg tuto__icon"></i>
+                    <p class="tuto__text">Choisissez un restaurant</p>
+                </div>
+                <div class="step">
+                    <div class="tuto__number">
+                        <p>2</p>
+                    </div>
+                    <i class="fa-solid fa-list-ul fa-lg tuto__icon"></i>
+                    <p class="tuto__text">Composez votre menu</p>
+                </div>
+                <div class="step">
+                    <div class="tuto__number">
+                        <p>3</p>
+                    </div>
+                    <i class="fa-solid fa-store fa-lg tuto__icon"></i>
+                    <p class="tuto__text">Dégustez au restaurant</p>
+                </div>
+            </div>
+        </section>
     </main>
     
     <footer>

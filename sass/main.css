@@ -100,4 +100,54 @@ h4 {
 .hero__button:hover {
   background: linear-gradient(180.33deg, rgba(255, 255, 255, 0.15) 0%, #FF79DA -11.44%, #9356DC 123.93%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+}
+
+/************ Tutorial ************/
+.tuto {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #FFFFFF;
+  padding: 50px 20px;
+}
+
+.tuto__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 10px;
+}
+.tuto__steps .step {
+  display: flex;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  height: 72px;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  padding-left: 40px;
+}
+.tuto__steps .step .tuto__icon {
+  color: #7E7E7E;
+}
+.tuto__steps .step .fa-store {
+  color: #9356DC;
+}
+.tuto__steps .tuto__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -10px;
+  color: #FFFFFF;
+  background-color: #9356DC;
+  border-radius: 25px;
+  width: 24px;
+  height: 24px;
+  font-weight: 500;
+}
+
+.tuto-text {
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */
