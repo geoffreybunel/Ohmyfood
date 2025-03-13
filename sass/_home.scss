@@ -1,3 +1,8 @@
+/************ Location ************/
+.location {
+    position: relative;
+    z-index: 1;
+}
 .location form {
     @include flex__center;
     gap: 17px;
@@ -15,5 +20,38 @@
 
     & .location__input::placeholder {
         color: $dark-color;
+    }
+}
+
+/************ Hero ************/
+.hero {
+    @include flex__column--center;
+    gap: 20px;
+    padding: 50px 20px;
+    background-color: $main-bg;
+
+    &__title {
+        width: 275px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        width: 315px;
+        text-align: center;
+        font-weight: 300;
+        color: $dark-color;
+    }
+
+    &__button {
+        @include button
+    }
+
+    &__button:hover {
+        background: linear-gradient(180.33deg,rgba(255, 255, 255, 0.15) 0%, /* White with 15% opacity */
+            $second-color -11.44%,
+            $main-color 123.93%
+        );
+        box-shadow: 0px 4px 15px 0px #00000059;
     }
 }

@@ -26,12 +26,21 @@ h4 {
   text-transform: uppercase;
 }
 
+/************ Header ************/
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 63px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  position: relative;
+  z-index: 2;
+}
+
+/************ Location ************/
+.location {
+  position: relative;
+  z-index: 1;
 }
 
 .location form {
@@ -55,4 +64,40 @@ h4 {
 }
 .location form .location__input::placeholder {
   color: #353535;
+}
+
+/************ Hero ************/
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #F6F6F6;
+}
+.hero__title {
+  width: 275px;
+  text-align: center;
+}
+.hero__subtitle {
+  font-size: 18px;
+  width: 315px;
+  text-align: center;
+  font-weight: 300;
+  color: #353535;
+}
+.hero__button {
+  height: 50px;
+  background: linear-gradient(180.33deg, #FF79DA, #9356DC);
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  border: none;
+  padding: 0 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.hero__button:hover {
+  background: linear-gradient(180.33deg, rgba(255, 255, 255, 0.15) 0%, #FF79DA -11.44%, #9356DC 123.93%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }/*# sourceMappingURL=main.css.map */
