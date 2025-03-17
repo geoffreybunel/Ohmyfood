@@ -1,43 +1,48 @@
-/***** COEURS *****/
-.like {
+/***** COEURS home *****/
+.like__btn {
+    height: 21px;
+    width: 21px;
+    background-color: transparent;
+    border: transparent 0px solid;
+    padding: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     position: relative;
-    display: inline-block;
     cursor: pointer;
-    font-size: 24px; /* Taille des icônes */
+    margin-right: 20px;
 }
 
-/* Cache la case à cocher */
-.like__checkbox {
-    display: none;
-}
-
-/* Style de base des icônes */
 .like__icon {
     position: absolute;
-    top: 0;
     left: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-size: 21px; /* Taille des icônes */
 }
 
-/* Icône du cœur vide (par défaut visible) */
 .like__icon--nobg {
-    opacity: 1;
+    background-color: $second-bg;
+    color: #101010;
+
+    &:hover {
+        opacity: 0;
+        transition: 0.25s;
+    }
 }
 
-/* Icône du cœur plein (par défaut caché) */
 .like__icon--bg {
-    opacity: 0;
-    transform: scale(0.8); /* Effet de zoom */
-    color: red; /* Change la couleur du cœur plein */
+    background: -webkit-linear-gradient($second-color, $main-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* Quand la case à cocher est cochée, on inverse les icônes */
-.like__checkbox:checked ~ .like__icon--nobg {
-    opacity: 0;
-    transform: scale(0.8);
-}
+/***** COEURS menus *****/
+.menu {
+    .like__icon {
+        font-size: 24px; /* Taille des icônes */
+    }
 
-.like__checkbox:checked ~ .like__icon--bg {
-    opacity: 1;
-    transform: scale(1);
+    .like__icon--nobg {
+        background-color: $main-bg;
+    }
 }
