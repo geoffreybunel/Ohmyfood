@@ -105,12 +105,12 @@
 }
 
 .tuto__steps {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    @include flex__column;
     gap: 20px;
     padding-left: 10px;
 
     @media (min-width: 768px) {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
     }
