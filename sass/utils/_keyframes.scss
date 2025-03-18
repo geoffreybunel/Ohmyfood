@@ -1,3 +1,4 @@
+/*** Loader ***/
 @keyframes loader {
     85% {
         opacity: 0.80;
@@ -7,3 +8,13 @@
         z-index: -10;
     }
 }
+
+/*** Loader circle rotation ***/
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 

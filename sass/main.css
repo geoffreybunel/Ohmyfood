@@ -1,6 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-/************ COLORS ************/
+/*** Loader ***/
+@keyframes loader {
+  85% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+/*** Loader circle rotation ***/
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /************ MIXINS ************/
+/************ COLORS ************/
 /************ GENERAL ************/
 * {
   margin: 0;
@@ -86,15 +105,6 @@ footer img {
   align-items: center;
   animation: loader 2s 2s ease-out both;
 }
-@keyframes loader {
-  85% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
 
 .loader {
   width: 60px;
@@ -119,14 +129,6 @@ footer img {
   border-left: 4px solid transparent;
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 /************ Location ************/
 .location {
   position: relative;
@@ -188,7 +190,7 @@ footer img {
   color: #FFFFFF;
 }
 .hero__button:hover {
-  background: linear-gradient(180.33deg, rgba(255, 255, 255, 0.15) 0%, #FF79DA -11.44%, #9356DC 123.93%);
+  background-color: linear-gradient(180.33deg, rgba(255, 255, 255, 0.15) 0%, #FF79DA -11.44%, #9356DC 123.93%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
 
@@ -346,7 +348,7 @@ footer img {
   background-color: #FFFFFF;
   padding: 15px;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
 }
 .menu .menu__card .menu__content {
@@ -390,6 +392,10 @@ footer img {
   font-weight: 500;
   font-size: 16px;
   color: #FFFFFF;
+}
+.menu__button:hover {
+  background-color: linear-gradient(180.33deg, rgba(255, 255, 255, 0.15) 0%, #FF79DA -11.44%, #9356DC 123.93%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
 
 /***** COEURS home *****/
