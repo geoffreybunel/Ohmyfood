@@ -188,9 +188,10 @@ footer img {
   font-weight: 500;
   font-size: 16px;
   color: #FFFFFF;
+  transition-duration: 0.25s;
 }
 .hero__button:hover {
-  background-color: linear-gradient(180.33deg, rgba(255, 255, 255, 0.15) 0%, #FF79DA -11.44%, #9356DC 123.93%);
+  background: linear-gradient(180.33deg, rgb(255, 255, 255) 0%, #FF79DA -11.44%, #9356DC 123.93%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
 
@@ -392,9 +393,10 @@ footer img {
   font-weight: 500;
   font-size: 16px;
   color: #FFFFFF;
+  transition-duration: 0.25s;
 }
 .menu__button:hover {
-  background-color: linear-gradient(180.33deg, rgba(255, 255, 255, 0.15) 0%, #FF79DA -11.44%, #9356DC 123.93%);
+  background: linear-gradient(180.33deg, rgb(255, 255, 255) 0%, #FF79DA -11.44%, #9356DC 123.93%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
 

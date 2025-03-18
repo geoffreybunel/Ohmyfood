@@ -9,9 +9,10 @@
     font-weight: 500;
     font-size: 16px;
     color: $second-text-color;
+    transition-duration: 0.25s;
 
     &:hover {
-        background-color: linear-gradient(180.33deg,rgba(255, 255, 255, 0.15) 0%, /* White with 15% opacity */
+        background: linear-gradient(180.33deg,rgba(255, 255, 255, 1) 0%, /* White with 15% opacity */
             $second-color -11.44%,
             $main-color 123.93%
         );
