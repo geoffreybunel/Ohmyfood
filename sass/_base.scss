@@ -64,12 +64,25 @@ footer {
         width: auto;
         height: 20px;
     }
+
+    @media (min-width: 1024px) {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        gap: 100px;
+        padding-bottom: 50px;
+        height: 100px;
+    }
 }
 
 .footer__links {
     @include flex__column;
     gap: 7px;
     font-weight: 400;
+
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        gap: 50px;
+    }
 }
 
 .footer__link {

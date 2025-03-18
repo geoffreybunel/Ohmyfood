@@ -18,6 +18,17 @@
     transform: rotate(360deg);
   }
 }
+/*** Menu effect fadein ***/
+@keyframes menu__fadein {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /************ MIXINS ************/
 /************ COLORS ************/
 /************ GENERAL ************/
@@ -76,12 +87,27 @@ footer img {
   width: auto;
   height: 20px;
 }
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 100px;
+    padding-bottom: 50px;
+    height: 100px;
+  }
+}
 
 .footer__links {
   display: flex;
   flex-direction: column;
   gap: 7px;
   font-weight: 400;
+}
+@media (min-width: 1024px) {
+  .footer__links {
+    flex-direction: row;
+    gap: 50px;
+  }
 }
 
 .footer__link {
@@ -357,6 +383,7 @@ footer img {
 }
 
 /***** MAIN *****/
+/***** Hero *****/
 .main__img img {
   height: 275px;
   width: 100%;
@@ -365,6 +392,7 @@ footer img {
      object-fit: cover;
 }
 
+/***** Menu *****/
 .menu {
   display: flex;
   flex-direction: column;
@@ -413,6 +441,7 @@ footer img {
   width: 100%;
 }
 
+/***** Dishes *****/
 .dishes {
   display: flex;
   flex-direction: column;
@@ -420,6 +449,7 @@ footer img {
   width: 100%;
 }
 
+/***** Button *****/
 .menu__button {
   height: 50px;
   background: linear-gradient(180.33deg, #FF79DA, #9356DC);
@@ -437,7 +467,7 @@ footer img {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
 
-/***** COEURS home *****/
+/***** Hearts *****/
 .like__btn {
   height: 21px;
   width: 21px;
@@ -474,10 +504,26 @@ footer img {
   -webkit-text-fill-color: transparent;
 }
 
-/***** COEURS menus *****/
+/***** Hearts menus *****/
 .menu .like__icon {
   font-size: 24px;
 }
 .menu .like__icon--nobg {
   background-color: #F6F6F6;
+}
+
+/***** Menu effect fadein *****/
+.dishes {
+  opacity: 0;
+  animation: menu__fadein 0.8s ease-out forwards;
+  transition: opacity 0.5s ease-in-out;
+}
+.dishes:nth-last-of-type(3) {
+  animation-delay: 0.3s;
+}
+.dishes:nth-last-of-type(2) {
+  animation-delay: 1s;
+}
+.dishes:nth-last-of-type(1) {
+  animation-delay: 1.7s;
 }/*# sourceMappingURL=main.css.map */

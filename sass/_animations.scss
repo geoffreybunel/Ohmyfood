@@ -1,4 +1,4 @@
-/***** COEURS home *****/
+/***** Hearts *****/
 .like__btn {
     height: 21px;
     width: 21px;
@@ -36,7 +36,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-/***** COEURS menus *****/
+/***** Hearts menus *****/
 .menu {
     .like__icon {
         font-size: 24px;
@@ -44,5 +44,24 @@
 
     .like__icon--nobg {
         background-color: $main-bg;
+    }
+}
+
+/***** Menu effect fadein *****/
+.dishes {
+    opacity: 0;
+    animation: menu__fadein 0.8s ease-out forwards;
+    transition: opacity 0.5s ease-in-out;
+
+    &:nth-last-of-type(3) {
+        animation-delay: 0.3s;
+    }
+
+    &:nth-last-of-type(2) {
+        animation-delay: 1s;
+    }
+
+    &:nth-last-of-type(1) {
+        animation-delay: 1.7s;
     }
 }
