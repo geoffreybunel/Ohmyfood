@@ -413,21 +413,51 @@ footer img {
   border-radius: 15px;
   background-color: #FFFFFF;
   padding: 15px;
-  justify-content: space-between;
-  align-items: flex-end;
+  padding-right: 0;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
 }
+.menu .menu__card .check {
+  background-color: #99E2D0;
+  border: none;
+  margin: -15px 0;
+  border-radius: 0 15px 15px 0;
+  width: 0;
+  overflow: hidden;
+  padding: initial;
+  transition: width 0.25s ease-in;
+}
+.menu .menu__card .check__icon {
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 0 15px;
+}
+.menu .menu__card.menu__card:hover .check {
+  background-color: #99E2D0;
+  border: none;
+  margin: -15px 0;
+  border-radius: 0 15px 15px 0;
+  width: 65px;
+}
 .menu .menu__card .menu__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding-right: 15px;
+}
+.menu .menu__card .menu__description {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 .menu .menu__card .meal_name {
   font-weight: 500;
+  text-overflow: ellipsis;
 }
 .menu .menu__card .meal_subname {
   font-size: 15px;
   font-weight: 300;
+  text-overflow: ellipsis;
 }
 .menu .menu__card .prices {
   font-size: 15px;

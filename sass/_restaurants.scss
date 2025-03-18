@@ -37,22 +37,58 @@
     & .menu__card {
         @include card;
         padding: 15px;
-        justify-content: space-between;
-        align-items: flex-end;
+        padding-right: 0;
         box-shadow: 0px 4.01px 15.04px 0px #0000001A;
 
-        & .menu__content{
+        & .check {
+            background-color: $tag-bg-color;
+            border: none;
+            margin: -15px 0;
+            border-radius: 0 15px 15px 0;
+            width: 0;
+            overflow: hidden;
+            padding: initial;
+            transition: width 0.25s ease-in;
+        
+            &__icon {
+                color: $second-text-color;
+                font-size: 20px;
+                padding: 0 15px;
+            }
+        }
+
+        &.menu__card:hover {
+            & .check {
+                background-color: $tag-bg-color;
+                border: none;
+                margin: -15px 0;
+                border-radius: 0 15px 15px 0;
+                width: 65px;
+            }
+        }
+
+        & .menu__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 100%;
+            padding-right: 15px;
+        }
+
+        & .menu__description{
             @include flex__column;
             gap: 5px
         }
 
         & .meal_name {
             font-weight: 500;
+            text-overflow: ellipsis;
         }
 
         & .meal_subname {
             font-size: 15px;
             font-weight: 300;
+            text-overflow: ellipsis;
         }
 
         & .prices {
