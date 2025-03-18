@@ -424,19 +424,12 @@ footer img {
   width: 0;
   overflow: hidden;
   padding: initial;
-  transition: width 0.25s ease-in;
+  transition: width 0.25s;
 }
 .menu .menu__card .check__icon {
   color: #FFFFFF;
   font-size: 20px;
   padding: 0 15px;
-}
-.menu .menu__card.menu__card:hover .check {
-  background-color: #99E2D0;
-  border: none;
-  margin: -15px 0;
-  border-radius: 0 15px 15px 0;
-  width: 65px;
 }
 .menu .menu__card .menu__content {
   display: flex;
@@ -556,4 +549,9 @@ footer img {
 }
 .dishes:nth-last-of-type(1) {
   animation-delay: 1.7s;
+}
+
+/***** Menu check *****/
+.menu__card:hover .check {
+  width: 65px;
 }/*# sourceMappingURL=main.css.map */

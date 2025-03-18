@@ -48,22 +48,12 @@
             width: 0;
             overflow: hidden;
             padding: initial;
-            transition: width 0.25s ease-in;
+            transition: width 0.25s;
         
             &__icon {
                 color: $second-text-color;
                 font-size: 20px;
                 padding: 0 15px;
-            }
-        }
-
-        &.menu__card:hover {
-            & .check {
-                background-color: $tag-bg-color;
-                border: none;
-                margin: -15px 0;
-                border-radius: 0 15px 15px 0;
-                width: 65px;
             }
         }
 

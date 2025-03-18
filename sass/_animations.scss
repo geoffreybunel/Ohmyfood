@@ -66,3 +66,9 @@
     }
 }
 
+/***** Menu check *****/
+.menu__card:hover {
+    & .check {
+        width: 65px;
+    }
+}
