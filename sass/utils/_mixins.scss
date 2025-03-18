@@ -1,0 +1,36 @@
+/************ MIXINS ************/
+
+@mixin button {
+    height: 50px;
+    background: linear-gradient(180.33deg, $second-color, $main-color);
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px 0px #00000040;
+    border: none;
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: $second-text-color;
+}
+
+@mixin card {
+    display: flex;
+    border-radius: 15px;
+    background-color: $second-bg;
+}
+
+@mixin flex__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex__column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex__column--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

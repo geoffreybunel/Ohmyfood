@@ -1,3 +1,47 @@
+/************  Loader ************/
+.loader-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($second-bg, 0.95);
+    position: fixed;
+    z-index: 3;
+    @include flex__center;
+    animation: loader 2s 2s ease-out both;
+}
+
+.loader {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid $second-color;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+
+    &::after {
+        content: '';  
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border-bottom: 4px solid $tag-bg-color;
+        border-left: 4px solid transparent;
+      }
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
 /************ Location ************/
 .location {
     position: relative;
@@ -44,11 +88,11 @@
     }
 
     &__button {
-        @include button
+        @include button;
     }
 
     &__button:hover {
-        background: linear-gradient(180.33deg,rgba(255, 255, 255, 0.15) 0%, /* White with 15% opacity */
+        background-color: linear-gradient(180.33deg,rgba(255, 255, 255, 0.15) 0%, /* White with 15% opacity */
             $second-color -11.44%,
             $main-color 123.93%
         );
