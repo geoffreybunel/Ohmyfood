@@ -89,6 +89,8 @@
 
     &__button {
         @include button;
+        display: flex;
+        align-items: center;
     }
 }
 

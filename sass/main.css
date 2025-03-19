@@ -227,6 +227,8 @@ footer img {
   color: #FFFFFF;
   transition-duration: 0.25s;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 .hero__button:hover {
   background: linear-gradient(180.33deg, rgb(255, 255, 255) 0%, #FF79DA -11.44%, #9356DC 123.93%);
