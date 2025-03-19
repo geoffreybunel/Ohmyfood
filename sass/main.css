@@ -200,6 +200,7 @@ footer img {
 @media (min-width: 768px) {
   .hero__title {
     width: 100%;
+    font-size: 2rem;
   }
 }
 .hero__subtitle {
