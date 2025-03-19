@@ -520,6 +520,8 @@ footer img {
   color: #FFFFFF;
   transition-duration: 0.25s;
   cursor: pointer;
+  display: flex;
+  align-items: center;
   padding: 0 50px;
 }
 .menu__button:hover {
