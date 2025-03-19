@@ -225,6 +225,7 @@ footer img {
   font-size: 16px;
   color: #FFFFFF;
   transition-duration: 0.25s;
+  cursor: pointer;
 }
 .hero__button:hover {
   background: linear-gradient(180.33deg, rgb(255, 255, 255) 0%, #FF79DA -11.44%, #9356DC 123.93%);
@@ -391,6 +392,11 @@ footer img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (min-width: 768px) {
+  .main__img img {
+    height: 383px;
+  }
+}
 
 /***** Menu *****/
 .menu {
@@ -404,6 +410,22 @@ footer img {
   position: relative;
   top: -63px;
   margin-bottom: -63px;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu .menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .menu .menu__header {
+    max-width: 768px;
+    justify-content: center;
+    gap: 30px;
+  }
 }
 .menu__title {
   font-family: "Shrikhand", serif;
@@ -415,6 +437,7 @@ footer img {
   padding: 15px 0 15px 15px;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
   overflow: hidden;
+  cursor: pointer;
 }
 .menu .menu__card .check {
   background-color: #99E2D0;
@@ -436,29 +459,35 @@ footer img {
   align-items: flex-end;
   width: 100%;
   padding-right: 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu .menu__card .menu__description {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu .menu__card .meal_name {
   font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu .menu__card .meal_subname {
   font-size: 15px;
   font-weight: 300;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu .menu__card .prices {
   font-size: 15px;
   font-weight: 700;
-}
-
-.menu__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  padding-left: 10px;
 }
 
 /***** Dishes *****/
@@ -467,6 +496,12 @@ footer img {
   flex-direction: column;
   gap: 12px;
   width: 100%;
+}
+@media (min-width: 768px) {
+  .dishes {
+    max-width: 768px;
+    margin: auto;
+  }
 }
 
 /***** Button *****/
@@ -481,6 +516,8 @@ footer img {
   font-size: 16px;
   color: #FFFFFF;
   transition-duration: 0.25s;
+  cursor: pointer;
+  padding: 0 50px;
 }
 .menu__button:hover {
   background: linear-gradient(180.33deg, rgb(255, 255, 255) 0%, #FF79DA -11.44%, #9356DC 123.93%);
@@ -550,5 +587,5 @@ footer img {
 
 /***** Menu check *****/
 .menu__card:hover .check {
-  width: 85px;
+  width: 75px;
 }/*# sourceMappingURL=main.css.map */

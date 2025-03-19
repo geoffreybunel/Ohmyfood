@@ -10,6 +10,7 @@
     font-size: 16px;
     color: $second-text-color;
     transition-duration: 0.25s;
+    cursor: pointer;
 
     &:hover {
         background: linear-gradient(180.33deg,rgba(255, 255, 255, 1) 0%, /* White with 15% opacity */
@@ -41,4 +42,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@mixin text-overflow--hidden {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
