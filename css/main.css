@@ -62,63 +62,6 @@ hr {
   margin-top: 5px;
 }
 
-/************ Header ************/
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 63px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
-  position: relative;
-  z-index: 2;
-}
-
-/************ Footer ************/
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  color: #FFFFFF;
-  background-color: #353535;
-  padding: 22px 25px;
-}
-footer img {
-  width: auto;
-  height: 20px;
-}
-@media (min-width: 1024px) {
-  footer {
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    gap: 100px;
-    padding-bottom: 50px;
-    height: 50px;
-  }
-}
-
-.footer__links {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  font-weight: 400;
-}
-@media (min-width: 1024px) {
-  .footer__links {
-    flex-direction: row;
-    gap: 50px;
-  }
-}
-
-.footer__link {
-  display: flex;
-  gap: 15px;
-}
-.footer__link i {
-  height: 13px;
-  width: 12px;
-}
-
 /************  Loader ************/
 .loader-container {
   width: 100%;
@@ -153,6 +96,75 @@ footer img {
   border-radius: 50%;
   border-bottom: 4px solid #99E2D0;
   border-left: 4px solid transparent;
+}
+
+/***************************************/
+/***** Hearts *****/
+.like__btn {
+  height: 21px;
+  width: 21px;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.like__icon {
+  position: absolute;
+  left: 0;
+  font-size: 21px;
+  transition-duration: 0.25s;
+}
+
+.like__icon--nobg {
+  background-color: #FFFFFF;
+  color: #101010;
+}
+.like__icon--nobg:hover {
+  opacity: 0;
+}
+
+.like__icon--bg {
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/***** Hearts - Menus pages *****/
+.menu .like__icon {
+  font-size: 24px;
+}
+.menu .like__icon--nobg {
+  background-color: #F6F6F6;
+}
+
+/***************************************/
+/***** Menu effect fadein *****/
+.dishes {
+  opacity: 0;
+  animation: menu__fadein 0.8s ease-out forwards;
+  transition: opacity 0.5s ease-in-out;
+}
+.dishes:nth-last-of-type(3) {
+  animation-delay: 0.3s;
+}
+.dishes:nth-last-of-type(2) {
+  animation-delay: 1s;
+}
+.dishes:nth-last-of-type(1) {
+  animation-delay: 1.7s;
+}
+
+/***************************************/
+/***** Menu check *****/
+.menu__card:hover .check {
+  width: 75px;
 }
 
 /************ Location ************/
@@ -371,18 +383,6 @@ footer img {
   padding: 15px;
 }
 
-/***** HEADER *****/
-.header__arrow {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 17px;
-  top: 17px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /***** MAIN *****/
 /***** Hero *****/
 .main__img img {
@@ -526,68 +526,69 @@ footer img {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
 
-/***** Hearts *****/
-.like__btn {
-  height: 21px;
-  width: 21px;
-  background-color: transparent;
-  border: transparent 0px solid;
-  padding: 0;
+/************ Header ************/
+.header {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 63px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
   position: relative;
-  cursor: pointer;
-  margin-right: 20px;
+  z-index: 2;
 }
-
-.like__icon {
+.header__arrow {
   position: absolute;
-  left: 0;
-  font-size: 21px;
-  transition-duration: 0.25s;
+  width: 30px;
+  height: 30px;
+  left: 17px;
+  top: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.like__icon--nobg {
-  background-color: #FFFFFF;
-  color: #101010;
+/************ Footer ************/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  color: #FFFFFF;
+  background-color: #353535;
+  padding: 22px 25px;
 }
-.like__icon--nobg:hover {
-  opacity: 0;
+footer img {
+  width: auto;
+  height: 20px;
 }
-
-.like__icon--bg {
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/***** Hearts menus *****/
-.menu .like__icon {
-  font-size: 24px;
-}
-.menu .like__icon--nobg {
-  background-color: #F6F6F6;
-}
-
-/***** Menu effect fadein *****/
-.dishes {
-  opacity: 0;
-  animation: menu__fadein 0.8s ease-out forwards;
-  transition: opacity 0.5s ease-in-out;
-}
-.dishes:nth-last-of-type(3) {
-  animation-delay: 0.3s;
-}
-.dishes:nth-last-of-type(2) {
-  animation-delay: 1s;
-}
-.dishes:nth-last-of-type(1) {
-  animation-delay: 1.7s;
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 100px;
+    padding-bottom: 50px;
+    height: 50px;
+  }
 }
 
-/***** Menu check *****/
-.menu__card:hover .check {
-  width: 75px;
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-weight: 400;
+}
+@media (min-width: 1024px) {
+  .footer__links {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+
+.footer__link {
+  display: flex;
+  gap: 15px;
+}
+.footer__link i {
+  height: 13px;
+  width: 12px;
 }/*# sourceMappingURL=main.css.map */
