@@ -37,8 +37,6 @@
 .location {
     position: relative;
     z-index: 1;
-}
-.location form {
     @include flex__center;
     gap: 17px;
     height: 50px;
