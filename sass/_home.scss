@@ -145,10 +145,11 @@
         height: 24px;
         font-weight: 500;
     }
-}
 
-.tuto-text {
-    font-weight: 500;
+    & .tuto__text {
+        font-size: 1rem;
+        font-weight: normal;
+    }
 }
 
 /************ Restaurants ************/
