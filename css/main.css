@@ -256,12 +256,18 @@ hr {
   max-width: 1080px;
   margin: auto;
 }
+.tuto__container--center {
+  align-items: center;
+}
 
 .tuto__steps {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding-left: 10px;
+}
+.tuto__steps--center {
+  align-items: center;
 }
 @media (min-width: 768px) {
   .tuto__steps {
@@ -319,11 +325,17 @@ hr {
   max-width: 1080px;
   margin: auto;
 }
+.restaurants__container--center {
+  align-items: center;
+}
 
 .restaurants__cards {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+.restaurants__cards--center {
+  align-items: center;
 }
 @media (min-width: 768px) {
   .restaurants__cards {
@@ -471,6 +483,9 @@ hr {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.menu .menu__card .menu__description--center {
+  align-items: center;
+}
 .menu .menu__card .meal_name {
   font-weight: 500;
   white-space: nowrap;
@@ -557,6 +572,9 @@ footer {
   background-color: #353535;
   padding: 22px 25px;
 }
+footer--center {
+  align-items: center;
+}
 footer img {
   width: auto;
   height: 20px;
@@ -576,6 +594,9 @@ footer img {
   flex-direction: column;
   gap: 7px;
   font-weight: 400;
+}
+.footer__links--center {
+  align-items: center;
 }
 @media (min-width: 1024px) {
   .footer__links {

@@ -38,6 +38,10 @@
 @mixin flex__column {
     display: flex;
     flex-direction: column;
+
+    &--center {
+        align-items: center;
+    }
 }
 
 @mixin flex__column--center {
